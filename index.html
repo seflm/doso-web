@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOSO — Never Miss a Dose Again</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg class="logo-mark" viewBox="0 0 16 16" fill="none">
+          <rect x="0" y="3" width="4" height="10" rx="1.5" fill="#E63946"/>
+          <rect x="5" y="0" width="10" height="10" rx="2" fill="#7C3AED"/>
+        </svg>
+        DOSO
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#why" class="nav-link">Why DOSO</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#philosophy" class="nav-link">The Science</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <span class="btn-coming-soon">Coming Soon</span>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+          <svg id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" viewBox="0 0 24 24" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-menu">
+    <a href="#why" class="mobile-link">Why DOSO</a>
+    <a href="#features" class="mobile-link">Features</a>
+    <a href="#philosophy" class="mobile-link">The Science</a>
+  </div>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section id="hero">
+      <!-- Real device photo as full-screen background -->
+      <div class="hero-bg">
+        <img src="images/doso - revealed.114.png" alt="DOSO device" />
+        <div class="hero-bg-fade"></div>
+      </div>
+
+      <!-- Subtle parallax atmosphere blobs -->
+      <div class="parallax-blobs" id="parallax-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+
+      <!-- Floating decorative shapes -->
+      <div class="hero-deco hd-1" id="hd-1"></div>
+      <div class="hero-deco hd-2" id="hd-2"></div>
+      <div class="hero-deco hd-3" id="hd-3"></div>
+
+      <!-- Desktop nav (top-right, visible while navbar is hidden) -->
+      <nav class="hero-nav">
+        <a href="#why">Why DOSO</a>
+        <a href="#features">Features</a>
+        <a href="#philosophy">The Science</a>
+      </nav>
+
+      <!-- Main text content -->
+      <div class="hero-content">
+        <span class="hero-eyebrow">by QVEX Tech</span>
+        <h1 class="hero-title">DOSO</h1>
+        <p class="hero-sub">Your vitamins, always remembered.<br>No phone. No noise. Just a gentle flash.</p>
+        <div class="hero-pills-row">
+          <span class="hero-pill pill-coral">Physical Reminder</span>
+          <span class="hero-pill pill-purple">Up to 6 Slots</span>
+          <span class="hero-pill pill-mint">No App Needed</span>
+        </div>
+      </div>
+
+      <!-- Bottom: tagline + scroll indicator -->
+      <div class="hero-bottom">
+        <a href="#philosophy" class="hero-tagline">Designed with habit formation in mind.</a>
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why DOSO + How It Works ===== -->
+    <section id="why">
+      <div class="container">
+        <div class="why-header reveal">
+          <span class="section-label">Why DOSO</span>
+          <h2 class="section-title">A reminder you actually<br>can't ignore.</h2>
+          <p class="why-body">A notification on your phone lasts half a second. It competes with every other ping on your device, gets swiped away in one tap, and is forgotten before you've even put the phone down. DOSO uses a physical flash instead — a light in your space that stays on until you take action. No app. No swiping. No forgetting.</p>
+        </div>
+
+        <!-- Phone vs DOSO comparison cards -->
+        <div class="comparison-pair reveal">
+          <div class="comp-card comp-bad">
+            <div class="comp-card-top">
+              <div class="comp-icon-wrap comp-icon-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                  <rect x="5" y="2" width="14" height="20" rx="3"/>
+                  <line x1="12" y1="18" x2="12" y2="18.01"/>
+                </svg>
+              </div>
+              <div class="comp-verdict verdict-bad">Ignored</div>
+            </div>
+            <p class="comp-name">Phone notification</p>
+            <p class="comp-desc">Swiped away in 0.5 seconds. Forgotten instantly. Competes with 80 other pings per day.</p>
+          </div>
+
+          <div class="comp-vs-badge">vs</div>
+
+          <div class="comp-card comp-good">
+            <div class="comp-card-top">
+              <div class="comp-icon-wrap comp-icon-doso">
+                <svg viewBox="0 0 60 18" fill="none">
+                  <path d="M2,0 H5 L7,2 V16 L5,18 H2 L0,16 V2 Z" fill="#E63946"/>
+                  <path d="M10,0 H26 L28,2 V16 L26,18 H10 L8,16 V2 Z" fill="#7C3AED"/>
+                  <circle cx="13" cy="16" r="2" fill="#10B981"/>
+                  <circle cx="25" cy="16" r="2" fill="#10B981"/>
+                  <circle cx="19" cy="16" r="2.5" fill="#1C1C2E"/>
+                  <path d="M31,0 H47 L49,2 V16 L47,18 H31 L29,16 V2 Z" fill="#7C3AED"/>
+                  <circle cx="34" cy="16" r="2" fill="#10B981"/>
+                  <circle cx="46" cy="16" r="2" fill="#10B981"/>
+                  <circle cx="40" cy="16" r="2.5" fill="#1C1C2E"/>
+                </svg>
+              </div>
+              <div class="comp-verdict verdict-good">Noticed</div>
+            </div>
+            <p class="comp-name">DOSO flash</p>
+            <p class="comp-desc">Stays on in your physical space. Impossible to swipe away. Stops only when you act.</p>
+          </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="loop-intro reveal">
+          <span class="section-label">How It Works</span>
+          <p class="loop-intro-line">Three steps. Repeat daily. Build the habit.</p>
+        </div>
+
+        <div class="loop-steps">
+
+          <!-- Step 1: Flash -->
+          <div class="loop-step step-coral reveal delay-1">
+            <div class="step-num">01</div>
+            <div class="step-visual">
+              <svg class="step-device-svg" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="112" cy="40" rx="70" ry="32" fill="rgba(16,185,129,0.06)"/>
+                <circle cx="92" cy="66" r="14" stroke="rgba(16,185,129,0.4)" stroke-width="1" class="step-ring-a step-ring-1"/>
+                <circle cx="92" cy="66" r="9" stroke="rgba(16,185,129,0.5)" stroke-width="1" class="step-ring-a step-ring-2"/>
+                <circle cx="132" cy="66" r="14" stroke="rgba(16,185,129,0.4)" stroke-width="1" class="step-ring-b step-ring-1"/>
+                <circle cx="132" cy="66" r="9" stroke="rgba(16,185,129,0.5)" stroke-width="1" class="step-ring-b step-ring-2"/>
+                <path d="M65,10 H75 L79,14 V66 L75,70 H65 L61,66 V14 Z" fill="#E63946"/>
+                <path d="M65,10 H75 L79,14 V12 L77,10 Z" fill="rgba(255,255,255,0.18)"/>
+                <rect x="66" y="34" width="11" height="10" rx="2" fill="rgba(0,0,0,0.2)"/>
+                <circle cx="70" cy="65" r="2.5" fill="#F97316" class="step-base-ind"/>
+                <path d="M86,10 H138 L142,14 V66 L138,70 H86 L82,66 V14 Z" fill="#7C3AED"/>
+                <path d="M89,14 H135 L139,18 V58 L135,62 H89 L85,58 V18 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="0.75"/>
+                <path d="M86,10 H138 L142,14 V12 L140,10 Z" fill="rgba(255,255,255,0.12)"/>
+                <circle cx="92" cy="66" r="5.5" fill="#10B981" class="step-led"/>
+                <circle cx="92" cy="66" r="9.5" fill="rgba(16,185,129,0.3)" class="step-led-g"/>
+                <circle cx="132" cy="66" r="5.5" fill="#10B981" class="step-led"/>
+                <circle cx="132" cy="66" r="9.5" fill="rgba(16,185,129,0.3)" class="step-led-g"/>
+                <circle cx="112" cy="66" r="7" fill="#1C1C2E" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+                <circle cx="112" cy="65.5" r="4.5" fill="#2A2A42"/>
+                <line x1="80.5" y1="14" x2="80.5" y2="66" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="step-title">DOSO starts glowing.</h3>
+            <p class="step-body">When it's time for your dose, DOSO begins flashing. Soft enough not to annoy, persistent enough to be noticed. It stays on until you take action.</p>
+            <span class="step-label">Make It Obvious*</span>
+          </div>
+
+          <!-- Step 2: Grab -->
+          <div class="loop-step step-purple reveal delay-2">
+            <div class="step-num">02</div>
+            <div class="step-visual">
+              <svg class="step-device-svg" viewBox="0 0 200 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="92" cy="8" rx="8" ry="4.5" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.45)" stroke-width="1" class="step-pill step-pill-1"/>
+                <ellipse cx="112" cy="5" rx="10" ry="5.5" fill="rgba(230,57,70,0.12)" stroke="rgba(230,57,70,0.4)" stroke-width="1" class="step-pill step-pill-2"/>
+                <ellipse cx="132" cy="8" rx="8" ry="4.5" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.4)" stroke-width="1" class="step-pill step-pill-3"/>
+                <circle cx="92" cy="17" r="1.5" fill="rgba(124,58,237,0.3)" class="step-pill step-pill-1"/>
+                <circle cx="112" cy="14" r="1.5" fill="rgba(230,57,70,0.3)" class="step-pill step-pill-2"/>
+                <circle cx="132" cy="17" r="1.5" fill="rgba(16,185,129,0.3)" class="step-pill step-pill-3"/>
+                <path d="M65,20 H75 L79,24 V76 L75,80 H65 L61,76 V24 Z" fill="#E63946"/>
+                <path d="M65,20 H75 L79,24 V22 L77,20 Z" fill="rgba(255,255,255,0.18)"/>
+                <rect x="66" y="44" width="11" height="10" rx="2" fill="rgba(0,0,0,0.2)"/>
+                <circle cx="70" cy="75" r="2.5" fill="#F97316"/>
+                <path d="M86,20 H138 L142,24 V76 L138,80 H86 L82,76 V24 Z" fill="#7C3AED"/>
+                <path d="M89,24 H135 L139,28 V68 L135,72 H89 L85,68 V28 Z" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="0.75"/>
+                <rect x="94" y="22" width="36" height="6" rx="1" fill="rgba(255,255,255,0.15)"/>
+                <path d="M86,20 H138 L142,24 V22 L140,20 Z" fill="rgba(255,255,255,0.12)"/>
+                <circle cx="92" cy="76" r="4.5" fill="rgba(16,185,129,0.5)"/>
+                <circle cx="132" cy="76" r="4.5" fill="rgba(16,185,129,0.5)"/>
+                <circle cx="112" cy="76" r="7" fill="#1C1C2E" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+                <circle cx="112" cy="75.5" r="4.5" fill="#2A2A42"/>
+                <line x1="80.5" y1="24" x2="80.5" y2="76" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="step-title">You pass by, you take them.</h3>
+            <p class="step-body">Your pills sit right on the stand, ready to go. No searching through drawers. DOSO is the reminder and the storage in one.</p>
+            <span class="step-label">Make It Easy*</span>
+          </div>
+
+          <!-- Step 3: Confirm -->
+          <div class="loop-step step-mint reveal delay-3">
+            <div class="step-num">03</div>
+            <div class="step-visual">
+              <svg class="step-device-svg" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="112" cy="66" r="22" fill="rgba(16,185,129,0.08)" class="confirm-outer-ring"/>
+                <circle cx="112" cy="66" r="14" fill="rgba(16,185,129,0.14)" class="confirm-inner-ring"/>
+                <path d="M65,10 H75 L79,14 V66 L75,70 H65 L61,66 V14 Z" fill="#E63946"/>
+                <path d="M65,10 H75 L79,14 V12 L77,10 Z" fill="rgba(255,255,255,0.18)"/>
+                <rect x="66" y="34" width="11" height="10" rx="2" fill="rgba(0,0,0,0.2)"/>
+                <circle cx="70" cy="65" r="2.5" fill="#F97316"/>
+                <path d="M86,10 H138 L142,14 V66 L138,70 H86 L82,66 V14 Z" fill="#7C3AED"/>
+                <path d="M89,14 H135 L139,18 V58 L135,62 H89 L85,58 V18 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="0.75"/>
+                <path d="M86,10 H138 L142,14 V12 L140,10 Z" fill="rgba(255,255,255,0.12)"/>
+                <circle cx="92" cy="66" r="4" fill="rgba(16,185,129,0.25)"/>
+                <circle cx="132" cy="66" r="4" fill="rgba(16,185,129,0.25)"/>
+                <circle cx="112" cy="66" r="7" fill="#0F2E1E" stroke="#10B981" stroke-width="2" class="confirm-btn-ani"/>
+                <circle cx="112" cy="65.5" r="4.5" fill="#163D28"/>
+                <polyline points="108.5,66 111.5,69 116.5,63" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="80.5" y1="14" x2="80.5" y2="66" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Press. Done.</h3>
+            <p class="step-body">One press of the button and DOSO stops flashing. A small, deliberate act that tells your brain the loop is closed for today.</p>
+            <span class="step-label">Make It Satisfying*</span>
+          </div>
+
+        </div>
+        <p class="footnote reveal">* Laws of Behavior Change from <em>Atomic Habits</em> by James Clear.</p>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section id="features">
+      <div class="container">
+        <div class="features-header reveal">
+          <span class="section-label">Features</span>
+          <h2 class="section-title">Simple by design.</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card fc-coral reveal delay-1">
+            <div class="fc-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="11"/></svg>
+            </div>
+            <h3>Ambient Flash Signal</h3>
+            <p>A soft, rhythmic pulse that speaks to peripheral awareness — easy to notice, impossible to confuse with anything else.</p>
+          </div>
+          <div class="feature-card fc-purple reveal delay-2">
+            <div class="fc-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            </div>
+            <h3>Priority Beep Mode</h3>
+            <p>For critical doses, enable acoustic alerts. A clear, calm beep that escalates gently — never jarring, always effective.</p>
+          </div>
+          <div class="feature-card fc-blue reveal delay-3">
+            <div class="fc-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <h3>One-Press Confirmation</h3>
+            <p>A single dedicated button stops the flash and logs the dose. Satisfying to press. Impossible to accidentally trigger.</p>
+          </div>
+          <div class="feature-card fc-mint reveal delay-4">
+            <div class="fc-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="5" height="18" rx="1.5"/><rect x="10" y="3" width="5" height="14" rx="1.5"/><rect x="17" y="3" width="5" height="10" rx="1.5"/></svg>
+            </div>
+            <h3>Up to 6 Medication Slots</h3>
+            <p>Attach up to six slots to a single DOSO — one slot per medication type. One device handles your entire regimen.</p>
+          </div>
+          <div class="feature-card fc-amber reveal delay-5">
+            <div class="fc-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Configure via Website</h3>
+            <p>Set up your schedule from any browser — no app to install, no account required. Plug in, configure, unplug. Done.</p>
+          </div>
+          <div class="feature-card fc-pink reveal delay-6">
+            <div class="fc-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Extremely Low Power</h3>
+            <p>Under 0.15W at full operation. DOSO runs continuously without meaningfully affecting your electricity bill — ever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Product Photos ===== -->
+    <section id="product-photos">
+      <div class="container">
+        <div class="photos-header reveal">
+          <span class="section-label">Real Product</span>
+          <h2 class="section-title">Designed to live on your counter.</h2>
+        </div>
+        <div class="photos-grid">
+          <div class="photo-card photo-card--large reveal">
+            <img src="images/photo-1.jpg" alt="DOSO device — front view" />
+          </div>
+          <div class="photos-stack">
+            <div class="photo-card reveal delay-1">
+              <img src="images/photo-2.jpg" alt="DOSO device — side view" />
+            </div>
+            <div class="photo-card reveal delay-2">
+              <img src="images/photo-3.jpg" alt="DOSO device — in use" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== The Device ===== -->
+    <section id="device-section">
+      <div class="container">
+        <div class="device-section-header reveal">
+          <span class="section-label">The Device</span>
+          <h2 class="section-title">Built to live on your counter.</h2>
+          <p class="device-section-sub">Modular by design — configure from 1 to 6 medication slots to match your regimen.</p>
+        </div>
+
+        <div class="device-annotated reveal">
+          <div class="annotation-group">
+            <svg class="showcase-device-svg" viewBox="0 0 405 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Device -->
+              <path d="M8,0 H28 L36,8 V112 L28,120 H8 L0,112 V8 Z" fill="#E63946"/>
+              <path d="M8,0 H28 L36,8 V3 L32,0 Z" fill="rgba(255,255,255,0.18)"/>
+              <rect x="9" y="52" width="18" height="16" rx="3.5" fill="rgba(0,0,0,0.22)"/>
+              <rect x="12" y="55" width="12" height="10" rx="2.5" fill="rgba(0,0,0,0.28)"/>
+              <circle cx="18" cy="108" r="3.5" fill="#F97316"/>
+              <circle cx="18" cy="108" r="6.5" fill="rgba(249,115,22,0.3)"/>
+              <path d="M47,0 H151 L159,8 V112 L151,120 H47 L39,112 V8 Z" fill="#7C3AED"/>
+              <path d="M51,8 H147 L153,14 V84 L147,90 H51 L45,84 V14 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <path d="M47,0 H151 L159,8 V3 L153,0 Z" fill="rgba(255,255,255,0.13)"/>
+              <circle cx="65" cy="108" r="5.5" fill="#10B981"/>
+              <circle cx="65" cy="108" r="10" fill="rgba(16,185,129,0.25)"/>
+              <circle cx="133" cy="108" r="5.5" fill="#10B981"/>
+              <circle cx="133" cy="108" r="10" fill="rgba(16,185,129,0.25)"/>
+              <circle cx="99" cy="108" r="8" fill="#1C1C2E" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+              <circle cx="99" cy="107.5" r="5" fill="#2A2A42"/>
+              <path d="M170,0 H274 L282,8 V112 L274,120 H170 L162,112 V8 Z" fill="#7C3AED"/>
+              <path d="M174,8 H270 L276,14 V84 L270,90 H174 L168,84 V14 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <path d="M170,0 H274 L282,8 V3 L276,0 Z" fill="rgba(255,255,255,0.13)"/>
+              <circle cx="188" cy="108" r="5.5" fill="#10B981"/>
+              <circle cx="188" cy="108" r="10" fill="rgba(16,185,129,0.25)"/>
+              <circle cx="256" cy="108" r="5.5" fill="#10B981"/>
+              <circle cx="256" cy="108" r="10" fill="rgba(16,185,129,0.25)"/>
+              <circle cx="222" cy="108" r="8" fill="#1C1C2E" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+              <circle cx="222" cy="107.5" r="5" fill="#2A2A42"/>
+              <path d="M293,0 H397 L405,8 V112 L397,120 H293 L285,112 V8 Z" fill="#7C3AED"/>
+              <path d="M297,8 H393 L399,14 V84 L393,90 H297 L291,84 V14 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <path d="M293,0 H397 L405,8 V3 L399,0 Z" fill="rgba(255,255,255,0.13)"/>
+              <circle cx="311" cy="108" r="5.5" fill="#10B981"/>
+              <circle cx="311" cy="108" r="10" fill="rgba(16,185,129,0.25)"/>
+              <circle cx="379" cy="108" r="5.5" fill="#10B981"/>
+              <circle cx="379" cy="108" r="10" fill="rgba(16,185,129,0.25)"/>
+              <circle cx="345" cy="108" r="8" fill="#1C1C2E" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+              <circle cx="345" cy="107.5" r="5" fill="#2A2A42"/>
+              <line x1="37.5" y1="8" x2="37.5" y2="112" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+              <line x1="160.5" y1="8" x2="160.5" y2="112" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+              <line x1="283.5" y1="8" x2="283.5" y2="112" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"/>
+              <!-- Base Unit annotation — leader from red piece (center x=18) -->
+              <circle cx="18" cy="120" r="2.5" fill="rgba(196,181,253,0.7)"/>
+              <line x1="18" y1="123" x2="18" y2="148" stroke="rgba(196,181,253,0.35)" stroke-width="1.2" stroke-dasharray="3,3"/>
+              <line x1="18" y1="148" x2="58" y2="148" stroke="rgba(196,181,253,0.35)" stroke-width="1.2"/>
+              <text x="62" y="145" font-size="8.5" font-weight="700" letter-spacing="0.07em" fill="#C4B5FD" font-family="sans-serif">BASE UNIT</text>
+              <text x="62" y="158" font-size="7.5" fill="rgba(255,255,255,0.38)" font-family="sans-serif">3 × 10 cm · Power &amp; brains</text>
+              <!-- Medication Slot annotation — leader from center of slot 2 (x=222) -->
+              <circle cx="222" cy="120" r="2.5" fill="rgba(196,181,253,0.7)"/>
+              <line x1="222" y1="123" x2="222" y2="148" stroke="rgba(196,181,253,0.35)" stroke-width="1.2" stroke-dasharray="3,3"/>
+              <text x="222" y="163" text-anchor="middle" font-size="8.5" font-weight="700" letter-spacing="0.07em" fill="#C4B5FD" font-family="sans-serif">MEDICATION SLOT</text>
+              <text x="222" y="176" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.38)" font-family="sans-serif">10 × 10 cm · Up to 6</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Habit Science ===== -->
+    <section id="philosophy">
+      <div class="container">
+        <div class="philosophy-header reveal">
+          <span class="section-label">The Science</span>
+          <h2 class="section-title">Designed with habit<br>formation in mind.</h2>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-card bento-wide reveal delay-1">
+            <div class="bento-chip chip-purple">Environment Design</div>
+            <h3>Your environment shapes your behavior more than your willpower ever will.</h3>
+            <p>Research in behavioral science consistently shows that the cues surrounding you drive action far more reliably than motivation. DOSO is built on this principle: instead of asking you to try harder, it redesigns a small corner of your space so that taking your medication becomes the obvious, natural choice.</p>
+            <div class="bento-footer-chip">Behavioral Science · James Clear · BJ Fogg</div>
+          </div>
+
+          <div class="bento-card bento-stat reveal delay-2" id="stat-card">
+            <div class="bento-chip chip-coral">01</div>
+            <div class="stat-num">50<span class="stat-accent">%</span></div>
+            <p>Up to half of all prescribed medication is forgotten or skipped. DOSO is designed to make sure yours isn't.</p>
+            <div class="stat-track">
+              <div class="stat-fill" id="stat-bar"></div>
+            </div>
+          </div>
+
+          <div class="bento-card reveal delay-3">
+            <div class="bento-chip chip-mint">02</div>
+            <h3 class="bento-h3-sm">Every confirmation is a small vote for your health.</h3>
+            <p>Each press of the button is a deliberate act of self-care. Repeated daily, those small moments compound into an identity — someone who shows up for their health, every single day.</p>
+          </div>
+
+          <div class="bento-card bento-accent bento-wide reveal delay-4">
+            <div class="accent-inner">
+              <div class="accent-text">
+                <span class="section-label" style="color:rgba(255,255,255,0.6)">Non-intrusive by design</span>
+                <h3>A physical cue beats a digital notification every time.</h3>
+                <p>Phone alerts compete with dozens of other pings and are easy to swipe away. DOSO's flash lives in your physical space — persistent, calm, and impossible to dismiss.</p>
+              </div>
+              <div class="accent-vis">
+                <div class="pulse-wrap">
+                  <div class="pulse-ring pr3"></div>
+                  <div class="pulse-ring pr2"></div>
+                  <div class="pulse-ring pr1"></div>
+                  <div class="pulse-core"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Final CTA ===== -->
+    <section id="cta">
+      <div class="cta-rule"></div>
+      <div class="cta-glow"></div>
+      <div class="cta-content reveal">
+        <span class="section-label">Never Miss a Dose</span>
+        <h2 class="cta-title">DOSO</h2>
+        <p class="cta-sub">
+          Stop relying on phone alerts you'll swipe away.<br>
+          <span class="cta-sub-light">Place your pills. Watch the light. Press the button. Done.</span>
+        </p>
+        <div class="cta-device-mini" aria-hidden="true">
+          <svg viewBox="0 0 285 84" fill="none">
+            <path d="M6,0 H20 L26,6 V78 L20,84 H6 L0,78 V6 Z" fill="#E63946"/>
+            <path d="M33,0 H107 L113,6 V78 L107,84 H33 L27,78 V6 Z" fill="#7C3AED"/>
+            <circle cx="46" cy="76" r="4" fill="#10B981"/><circle cx="100" cy="76" r="4" fill="#10B981"/>
+            <circle cx="73" cy="76" r="5.5" fill="#1C1C2E"/>
+            <path d="M116,0 H190 L196,6 V78 L190,84 H116 L110,78 V6 Z" fill="#7C3AED"/>
+            <circle cx="129" cy="76" r="4" fill="#10B981"/><circle cx="183" cy="76" r="4" fill="#10B981"/>
+            <circle cx="156" cy="76" r="5.5" fill="#1C1C2E"/>
+            <path d="M199,0 H273 L279,6 V78 L273,84 H199 L193,78 V6 Z" fill="#7C3AED"/>
+            <circle cx="212" cy="76" r="4" fill="#10B981"/><circle cx="266" cy="76" r="4" fill="#10B981"/>
+            <circle cx="239" cy="76" r="5.5" fill="#1C1C2E"/>
+          </svg>
+        </div>
+        <p class="cta-tba">Availability to be announced.</p>
+      </div>
+
+      <footer class="footer reveal">
+        <div class="footer-left">
+          <span class="footer-logo">DOSO</span>
+          <a href="mailto:info@qvex.eu" class="footer-email">info@qvex.eu</a>
+        </div>
+        <span class="footer-copy">© 2026 QVEX Tech. All rights reserved.</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <script>
+    // ===== Navbar =====
+    const navbar = document.getElementById('navbar');
+    const hero   = document.getElementById('hero');
+    function updateNavbar() {
+      const pastHero = window.scrollY >= hero.offsetHeight - 80;
+      navbar.classList.toggle('scrolled', pastHero);
+      if (window.innerWidth >= 768) {
+        navbar.classList.toggle('navbar-hidden', !pastHero);
+      } else {
+        navbar.classList.remove('navbar-hidden');
+      }
+    }
+    window.addEventListener('scroll', updateNavbar, { passive: true });
+    window.addEventListener('resize', updateNavbar);
+    updateNavbar();
+
+    // ===== Mobile menu =====
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu   = document.getElementById('mobile-menu');
+    const iconMenu     = document.getElementById('icon-menu');
+    const iconClose    = document.getElementById('icon-close');
+    hamburgerBtn.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      navbar.classList.toggle('menu-open', open);
+      iconMenu.style.display  = open ? 'none' : '';
+      iconClose.style.display = open ? ''     : 'none';
+    });
+    document.querySelectorAll('.mobile-link, .nav-link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        mobileMenu.classList.remove('open');
+        navbar.classList.remove('menu-open');
+        iconMenu.style.display  = '';
+        iconClose.style.display = 'none';
+        const t = document.querySelector(link.getAttribute('href'));
+        if (t) setTimeout(() => t.scrollIntoView({ behavior: 'smooth' }), 50);
+      });
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      if (!link.classList.contains('nav-link') && !link.classList.contains('mobile-link')) {
+        link.addEventListener('click', e => {
+          const h = link.getAttribute('href');
+          if (h.length > 1) { e.preventDefault(); const t = document.querySelector(h); if (t) t.scrollIntoView({ behavior: 'smooth' }); }
+        });
+      }
+    });
+
+    // ===== Parallax =====
+    const blobLayer    = document.getElementById('parallax-blobs');
+    const heroBgImg    = document.querySelector('.hero-bg img');
+    const heroContent  = document.querySelector('.hero-content');
+    const heroBottom   = document.querySelector('.hero-bottom');
+    const heroNav      = document.querySelector('.hero-nav');
+    const hd1          = document.getElementById('hd-1');
+    const hd2          = document.getElementById('hd-2');
+    const hd3          = document.getElementById('hd-3');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const y = window.scrollY;
+          const heroH = hero.offsetHeight;
+
+          // Hero parallax — only while hero is visible
+          if (y < heroH + 200) {
+            if (heroBgImg)   heroBgImg.style.transform   = `translateY(${y * 0.38}px)`;
+            if (blobLayer)   blobLayer.style.transform   = `translateY(${y * 0.18}px)`;
+            if (heroContent) heroContent.style.transform = `translateY(${y * 0.09}px)`;
+            if (heroBottom)  heroBottom.style.transform  = `translateY(${y * 0.05}px)`;
+            if (heroNav)     heroNav.style.transform     = `translateY(${y * 0.06}px)`;
+            if (hd1) hd1.style.transform = `translateY(${y * 0.48}px)`;
+            if (hd2) hd2.style.transform = `translateY(${y * 0.28}px)`;
+            if (hd3) hd3.style.transform = `translateY(${y * 0.4}px)`;
+          }
+
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // ===== Scroll-reveal =====
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '-60px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // ===== Stat bar =====
+    const statCard = document.getElementById('stat-card');
+    const statBar  = document.getElementById('stat-bar');
+    const statObs  = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) { statBar.classList.add('animate'); statObs.disconnect(); }
+    }, { threshold: 0.5 });
+    if (statCard) statObs.observe(statCard);
+
+  </script>
+
+</body>
+</html>
